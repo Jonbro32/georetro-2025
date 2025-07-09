@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const HitCounter = () => {
- const [hits, setHits] = useState(5);
+ const [hits, setHits] = useState(0);
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const stored = localStorage.getItem('georetro-hit-count');
