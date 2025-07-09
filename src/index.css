@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+}
+
+#root {
+  height: 100%;
+  margin: 0;
+  background: black;
+  color: lime;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Kill the white background for good */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background-color: black;
+  color: #39ff14; /* neon green fallback */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 1s infinite;
+}
