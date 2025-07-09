@@ -1,6 +1,6 @@
 import react, { useState } from 'react';
 import BsButton from '../components/Bsbutton';
-import HittCounter from '../components/HittCounter';
+import HitCounter from '../components/HitCounter';
 
 export default function Home () {
     
@@ -28,7 +28,7 @@ export default function Home () {
        Sign My Guestbook
     </button>
     <BsButton color="danger" text='Test Button' onClick={() => setAlert(true)}/>
-    <HittCounter/>
+    <HitCounter/>
 
   </div>
 </div>

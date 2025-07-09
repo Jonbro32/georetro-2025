@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const HittCounter = () => {
+const HitCounter = () => {
  const [hits, setHits] = useState(0);
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -21,4 +21,4 @@ const HittCounter = () => {
   );
 }
 
-export default HittCounter;
+export default HitCounter;
